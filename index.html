@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>宠迹 - 宠物数字孪生，永远陪伴你</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>@font-face{font-family:'MiSans';src:url('https://assets-persist.lovart.ai/agent-static-assets/MiSans-Regular.ttf') format('truetype');font-weight:normal;}@font-face{font-family:'MiSans';src:url('https://assets-persist.lovart.ai/agent-static-assets/MiSans-Bold.ttf') format('truetype');font-weight:bold;}@font-face{font-family:'NotoSerifCJK';src:url('https://assets-persist.lovart.ai/agent-static-assets/NotoSerifCJKsc-Regular.otf') format('opentype');font-weight:normal;}@font-face{font-family:'NotoSerifCJK';src:url('https://assets-persist.lovart.ai/agent-static-assets/NotoSerifCJKsc-Bold.otf') format('opentype');font-weight:bold;}*{margin:0;padding:0;box-sizing:border-box;}html,body{width:1920px;font-family:'MiSans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#5a5a5a;background:#fefdfb;overflow-x:hidden;}.hero{width:100%;height:720px;background:url('https://a.lovart.ai/artifacts/agent/U4mqIlJjxtnEdB9B.png') center/cover no-repeat;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;}.hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(255,240,235,0.25);z-index:1;}.hero-content{position:relative;z-index:2;text-align:center;max-width:900px;padding:0 60px;}.hero-headline{font-family:'NotoSerifCJK',serif;font-size:64px;font-weight:bold;color:#2d2d2d;line-height:1.3;margin-bottom:24px;letter-spacing:-1px;}.hero-subheadline{font-size:20px;color:#5a5a5a;line-height:1.6;margin-bottom:48px;font-weight:400;}.cta-button{display:inline-block;padding:18px 48px;background:linear-gradient(135deg,#ffc9b9 0%,#ffb3a7 100%);color:#fff;font-size:18px;font-weight:bold;border:none;border-radius:50px;cursor:pointer;transition:all 0.3s ease;box-shadow:0 12px 32px rgba(255,179,167,0.35);text-decoration:none;font-family:'MiSans',sans-serif;}.cta-button:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(255,179,167,0.45);}.feature-section{width:100%;padding:120px 60px;display:flex;align-items:center;gap:80px;}.feature-section.reverse{flex-direction:row-reverse;}.feature-image{flex:0 0 50%;display:flex;justify-content:center;}.feature-image img{width:100%;max-width:600px;border-radius:32px;box-shadow:0 20px 60px rgba(255,179,167,0.2);object-fit:cover;}.feature-content{flex:0 0 50%;}.feature-headline{font-family:'NotoSerifCJK',serif;font-size:48px;font-weight:bold;color:#2d2d2d;line-height:1.3;margin-bottom:24px;}.feature-description{font-size:18px;color:#5a5a5a;line-height:1.8;margin-bottom:32px;font-weight:400;}.feature-points{display:flex;flex-direction:column;gap:20px;}.feature-point{display:flex;align-items:flex-start;gap:16px;}.feature-point-icon{width:40px;height:40px;background:linear-gradient(135deg,#ffc9b9 0%,#ffb3a7 100%);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:20px;flex-shrink:0;margin-top:2px;}.feature-point-text{flex:1;}.feature-point-title{font-size:16px;font-weight:bold;color:#2d2d2d;margin-bottom:6px;}.feature-point-desc{font-size:14px;color:#7a7a7a;line-height:1.6;}.timeline-section{width:100%;padding:120px 60px;background:linear-gradient(180deg,#faf8f5 0%,#f5f0ed 100%);}.section-center{max-width:1200px;margin:0 auto;text-align:center;}.timeline-headline{font-family:'NotoSerifCJK',serif;font-size:48px;font-weight:bold;color:#2d2d2d;line-height:1.3;margin-bottom:24px;}.timeline-description{font-size:18px;color:#5a5a5a;line-height:1.8;margin-bottom:60px;max-width:700px;margin-left:auto;margin-right:auto;}.timeline-image{width:100%;max-width:900px;margin:0 auto;display:block;}.timeline-image img{width:100%;border-radius:32px;box-shadow:0 20px 60px rgba(255,179,167,0.2);object-fit:cover;}.stories-section{width:100%;padding:120px 60px;}.stories-headline{font-family:'NotoSerifCJK',serif;font-size:48px;font-weight:bold;color:#2d2d2d;line-height:1.3;margin-bottom:60px;text-align:center;}.stories-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;max-width:1200px;margin:0 auto;}.story-card{display:flex;flex-direction:column;gap:24px;}.story-image{width:100%;aspect-ratio:1;overflow:hidden;border-radius:32px;box-shadow:0 20px 60px rgba(255,179,167,0.2);}.story-image img{width:100%;height:100%;object-fit:cover;}.story-caption{font-size:18px;color:#5a5a5a;line-height:1.8;font-weight:400;}.story-caption strong{color:#2d2d2d;font-weight:bold;}.final-cta-section{width:100%;padding:100px 60px;background:linear-gradient(135deg,#ffc9b9 0%,#ffb3a7 50%,#e8c5d9 100%);text-align:center;}.final-cta-headline{font-family:'NotoSerifCJK',serif;font-size:52px;font-weight:bold;color:#fff;line-height:1.3;margin-bottom:24px;}.final-cta-subheadline{font-size:20px;color:rgba(255,255,255,0.95);line-height:1.6;margin-bottom:48px;max-width:700px;margin-left:auto;margin-right:auto;}.cta-button-white{display:inline-block;padding:18px 48px;background:#fff;color:#ff9f8f;font-size:18px;font-weight:bold;border:none;border-radius:50px;cursor:pointer;transition:all 0.3s ease;box-shadow:0 12px 32px rgba(0,0,0,0.15);text-decoration:none;font-family:'MiSans',sans-serif;}.cta-button-white:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(0,0,0,0.2);}@keyframes fadeInUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}.hero-content{animation:fadeInUp 0.8s ease-out;}.feature-section{animation:fadeInUp 0.8s ease-out;}.timeline-section{animation:fadeInUp 0.8s ease-out;}.stories-section{animation:fadeInUp 0.8s ease-out;}.final-cta-section{animation:fadeInUp 0.8s ease-out;}@media (max-width:1920px){html,body{width:100%;}}@media (max-width:1280px){.feature-section{flex-direction:column;gap:60px;}.feature-section.reverse{flex-direction:column;}.feature-image,.feature-content{flex:1 1 auto;}.stories-grid{grid-template-columns:1fr;gap:40px;}}</style>
+</head>
+<body>
+<section class="hero">
+<div class="hero-content">
+<h1 class="hero-headline">让爱永存,与宠物的每一刻都值得珍藏</h1>
+<p class="hero-subheadline">为你的宠物创建专属的数字孪生体，用AI技术将珍贵回忆永远保存，让爱的陪伴跨越时空</p>
+<button class="cta-button">开始记录美好时光</button>
+</div>
+</section>
+<section class="feature-section">
+<div class="feature-image">
+<img src="https://a.lovart.ai/artifacts/agent/aBylliC2CX4PKhnB.png" alt="真实宠物与数字孪生体" style="width: 600px; height: 400px;">
+</div>
+<div class="feature-content">
+<h2 class="feature-headline">真实的数字孪生体<br>永远陪伴你</h2>
+<p class="feature-description">
+通过先进的AI技术，我们为每一只宠物创建独一无二的数字孪生体。这不仅仅是一个虚拟形象，更是你与宠物深厚情感的数字化延续。
+</p>
+<div class="feature-points">
+<div class="feature-point">
+<div class="feature-point-icon">
+<i class="ri-heart-fill"></i>
+</div>
+<div class="feature-point-text">
+<div class="feature-point-title">智能识别与学习</div>
+<div class="feature-point-desc">系统学习你的宠物特征，完美还原每一个细节</div>
+</div>
+</div>
+<div class="feature-point">
+<div class="feature-point-icon">
+<i class="ri-shield-check-fill"></i>
+</div>
+<div class="feature-point-text">
+<div class="feature-point-title">云端安全存储</div>
+<div class="feature-point-desc">所有回忆安全备份，永不丢失</div>
+</div>
+</div>
+<div class="feature-point">
+<div class="feature-point-icon">
+<i class="ri-share-2-fill"></i>
+</div>
+<div class="feature-point-text">
+<div class="feature-point-title">随时随地分享</div>
+<div class="feature-point-desc">与家人朋友分享宠物的美好时光</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="timeline-section">
+<div class="section-center">
+<h2 class="timeline-headline">自动整理时间线<br>珍藏每个瞬间</h2>
+<p class="timeline-description">
+每一张照片、每一段视频都会被自动整理到时间线上。系统智能识别宠物成长的每个阶段，让你轻松回顾美好时光。
+</p>
+<div class="timeline-image">
+<img src="https://a.lovart.ai/artifacts/agent/vmzXQx5azx6aQL2z.png" alt="时间线界面" style="width: 900px; height: 656px;">
+</div>
+</div>
+</section>
+<section class="stories-section">
+<h2 class="stories-headline">用户故事</h2>
+<div class="stories-grid">
+<div class="story-card">
+<div class="story-image">
+<img src="https://a.lovart.ai/artifacts/agent/rOmuZe97dpUtPbJw.png" alt="年轻用户与宠物" style="width: 512px; height: 512px;">
+</div>
+<p class="story-caption">
+<strong>"宠迹让我的宠物永远陪伴我"</strong><br>
+每天的点点滴滴都被记录下来，看着时间线上的成长记录，我感受到了与毛茸茸朋友之间的深深羁绊。这就像给它一个永恒的生命。
+</p>
+</div>
+<div class="story-card">
+<div class="story-image">
+<img src="https://a.lovart.ai/artifacts/agent/JHQMcNDuZwMkfQid.png" alt="老年用户与宠物" style="width: 512px; height: 512px;">
+</div>
+<p class="story-caption">
+<strong>"宠物陪我度过了最温暖的时光"</strong><br>
+随着年岁增长，宠物成了我最亲密的伙伴。宠迹让我能够珍藏所有与它相处的美好时刻，这些回忆比任何东西都珍贵。
+</p>
+</div>
+</div>
+</section>
+<section class="final-cta-section">
+<h2 class="final-cta-headline">现在就开始<br>为你的宠物创建数字孪生体</h2>
+<p class="final-cta-subheadline">
+让爱永存，将每一个珍贵时刻转化为永恒的记忆。加入数千个宠物家庭，一起见证爱的故事。
+</p>
+<button class="cta-button-white">立即下载应用</button>
+</section>
+</body>
+</html>
